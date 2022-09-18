@@ -15,6 +15,10 @@
     "saveSpec": null,
     "fetchSpec": "latest"
   },
+  "engines": {
+  "node": "16.17.0",
+  "npm": "8.15.0"
+},
   "_requiredBy": [
     "#USER",
     "/"
@@ -208,3 +212,4 @@
   "style": "dist/css/bootstrap.css",
   "version": "5.1.3"
 }
+

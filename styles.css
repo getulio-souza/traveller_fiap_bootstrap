@@ -283,3 +283,13 @@ Footer
   cursor: pointer;
   transform: translateY(5px);
 }
+
+.text-center{
+  text-align: center;
+}
+
+.text-center > a{
+  color: #fff;
+  font-weight: 900;
+  text-decoration: underline;
+}

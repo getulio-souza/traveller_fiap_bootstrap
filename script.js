@@ -10,8 +10,6 @@ const encuentrame = () => {
 
         divCoordenadas.innerHTML = `lat: ${latitude}, lng: ${longitude}`;
     
-        //mapa
-        // https://www.mapquestapi.com/staticmap/v5/map?key=KEY&locations=LOCATION&size=WIDTH,HEIGHT
         const mapa = new Image();
         mapa.src = `https://www.mapquestapi.com/staticmap/v5/map?key=xzaNvERnuyVMzk0l3PvjLp3M6x797aet&locations=${latitude},${longitude}&size=400,300`;
         divMapa.appendChild(mapa);

@@ -302,3 +302,14 @@ Footer
   font-weight: 900;
   text-decoration: underline;
 }
+
+@media screen and (max-width:900px){
+  .about-img{
+    width:350px;
+  }
+}
+@media screen and (min-width:901px){
+  .about-img{
+    width: 500px;
+  }
+}

@@ -243,6 +243,11 @@ Mapa
  justify-content: center;
  align-items: center;
 }
+ @media screen and (max-width:900px){
+   .map-container{
+     margin: 0 auto;
+    }
+}
 
 .map-container h2{
    color: var(--corpreta);
@@ -265,6 +270,11 @@ Mapa
   object-fit: cover;
   box-shadow: 1px 2px 3px #000;
   margin: 20px 0;
+}
+@media screen and (max-width:900px){
+  .mapa > img{
+    width: 300px;
+  }
 }
 
 /*

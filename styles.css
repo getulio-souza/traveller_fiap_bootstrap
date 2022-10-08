@@ -65,6 +65,21 @@ Navbar
  margin: 10px 20px;
 }
 
+.sign-in-link{
+  background-color: #7BC074;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
+.sign-in-link:hover{
+  background-color: transparent;
+  border: 1px solid #000;
+}
+
+
 /*
 ============================
 Toogle btn

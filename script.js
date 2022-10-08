@@ -35,3 +35,8 @@ const verificarGeo = () => {
 };
 
 verificarGeo();
+
+
+$(document).ready(function() {
+    $(".dropdown-toggle").dropdown();
+});

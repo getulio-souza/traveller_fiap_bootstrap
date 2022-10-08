@@ -13,7 +13,7 @@
     <!-- Styles CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="/Pages/como-chegar/como-chegar.css">
 
     <!-- font aweasome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -44,7 +44,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <section class="container-fluid">
             <!-- logo -->
-            <a class="navbar-brand"><img src="./img/traveller_logo.png" alt="traveller_logo" class="traveller_logo"></a>
+            <a class="navbar-brand"><img src="/img/traveller_logo.png" alt="traveller_logo" class="traveller_logo"></a>
             <!-- button-->
             <button class="navbar-toggler position-relative" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -53,47 +53,50 @@
             </button>
 
             <!-- icons -->
-            <div class="collapse navbar-collapse h6" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 float-end">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./index.html" id="my_nav_item">Home</a>
                         <div class="my_nav_underline"></div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/Pages/como-chegar/como-chegar.html" id="my_nav_item" data-toggle="modal"
-                            data-target="#exampleModal">Como chegar</a>
-                        </li>
+                        <a class="nav-link active" aria-current="page" href="#" id="my_nav_item" data-toggle="modal"
+                            data-target="#exampleModal">Reservas</a>
+                        <div class="my_nav_underline"></div>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./dicas-uteis.html" id="my_nav_item">Dicas
                             úteis</a>
-                        </li>
+                        <div class="my_nav_underline"></div>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/Pages/hospedagem/hospedagem.html"
                             id="my_nav_item">Onde se
                             hospedar</a>
-                        </li>
+                        <div class="my_nav_underline"></div>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/Pages/alugar-carro/alugar-carro.html"
-                            id="my_nav_item"> Alugue
+                        <a class="nav-link active" aria-current="page" href="./quem-sou.html" id="my_nav_item"> Alugue
                             seu carro</a>
-                        </li>
+                        <div class="my_nav_underline"></div>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#" id="my_nav_item">
+                        <a class="nav-link active" aria-current="page" href="./aluguel-de-carro.html" id="my_nav_item">
                             Gastrononia</a>
-                        </li>
+                        <div class="my_nav_underline"></div>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./quem-sou.html" id="my_nav_item"> Vida
                             Noturna/Entretenimento</a>
-                        </li>
+                        <div class="my_nav_underline"></div>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./quem-sou.html" id="my_nav_item">
                             Parques</a>
-                        </li>
+                        <div class="my_nav_underline"></div>
+                    </li>
                     <li class="nav-item">
-                       <div class="m-auto">
-                <button type="button" class="btn_banner" data-toggle="modal" data-target="#exampleModal">Embarque
-                    agora</button>
-            </div>
+                        <a class="sign-in-link nav-link active " aria-current="page" id="my_nav_item">Login</a>
                     </li>
                 </ul>
             </div>
@@ -109,15 +112,11 @@
         <article class="container text-lg-center text-center mb-3 p-2 shadow p-5 mb-5 bg-white rounded"
             id="box_1_banner">
             <div class="m-auto">
-                <h1>Bem-vindo ao Traveller</h1>
-                <p class="w-sm-50">Fique por dentro das minhas aventuras por esse planeta cheio de surpresas e
-                    mistérios.
-                </p>
-                <button type="button" class="btn_banner" data-toggle="modal" data-target="#exampleModal">Embarque
-                    agora</button>
+                <h1>Como chegar</h1>
+                <p class="w-sm-50">Siga o passo a passo abaixo para chegar com segurança e tranquilidade ao seu destino</p>
             </div>
 
-            <!-- Modal de escolha de destino -->
+            <!-- Modal -->
             <section class="modal fade modal_container" id="exampleModal" tabindex="-1" role="dialog"
                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -704,96 +703,74 @@
         <img class="rounded" src="./img/hiking_2.jpg" alt="" id="img_banner">
     </section>
 
-    <!--list of boxes (Destinos visitados) -->
-    <h2 class="text-center mx-0 my-4">Destinos visitados</h2>
-    <!-- box -->
-    <section class="d-lg-flex justify-content-center gap-5 mb-4">
-        <div class="d-flex flex-column justify-content-center align-items-center">
-            <article class="card mb-4" id="card_traveller">
-                <img class="card-img-top"
-                    src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-paris-capa2019-02.jpg"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Paris</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <button class="btn_box">Leia mais</button>
+    <section class="d-flex justify-content-center flex-wrap gap-4">
+        <!-- passo 1 -->
+        <article>
+            <h2 class="text-center mx-0 my-4 h4">Informe a sua origem</h2>
+            <div class="d-lg-flex justify-content-center gap-5 mb-4">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <article class="card mb-4" id="card_traveller">
+                        <img class="card-img-top" src="/img/como chegar/2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Ative a sua localização para que o aparelho possa encontrá-la.
+                            </p>
+                        </div>
+                    </article>
                 </div>
-            </article>
-        </div>
-
-        <!-- box -->
-        <div class="d-flex flex-column justify-content-center align-items-center">
-            <article class="card mb-4" id="card_traveller">
-                <img class="card-img-top"
-                    src="https://wise.com/imaginary/e57def54f829e2bad52465c9fbaffeed.jpg?width=1200"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Japão</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <button class="btn_box">Leia mais</button>
+            </div>
+        </article>
+        <!-- passo 2 -->
+        <article>
+            <h2 class="text-center mx-0 my-4 h4">Informe o seu destino</h2>
+            <div class="d-lg-flex justify-content-center gap-5 mb-4">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <article class="card mb-4" id="card_traveller">
+                        <img class="card-img-top" src="/img/como chegar/1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Digite o seu destino completo, com nome da rua e número do local.
+                            </p>
+                        </div>
+                    </article>
                 </div>
-            </article>
-        </div>
-
-        <!-- box -->
-        <div class="d-flex flex-column justify-content-center align-items-center">
-            <article class="card mb-4" id="card_traveller">
-                <img class="card-img-top" src="http://cdn.cnn.com/cnnnext/dam/assets/210305150150-copacabana.jpg"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Brazil</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <button class="btn_box">Leia mais</button>
-            </article>
-        </div>
+            </div>
+        </article>
+        <!-- passo 3 -->
+        <article>
+            <h2 class="text-center mx-0 my-4 h4">Siga o trajeto sugerido</h2>
+            <div class="d-lg-flex justify-content-center gap-5 mb-4">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <article class="card mb-4" id="card_traveller">
+                        <img class="card-img-top" src="/img/como chegar/3.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Evite atalhos para não correr o risco de se perder no meio do caminho.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </article>
+        <!-- passo 4 -->
+        <article>
+            <h2 class="text-center mx-0 my-4 h4">Confirme o local de chegada</h2>
+            <div class="d-lg-flex justify-content-center gap-5 mb-4">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <article class="card mb-4" id="card_traveller">
+                        <img class="card-img-top" src="/img/como chegar/4.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Ao chegar, cheque com os residentes locais se aquele é o lugar certo. 
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </article>
     </section>
 
-    <!--list of boxes (próximos destinos) -->
-    <h2 class="text-center mx-0 my-4">Próximos destinos</h2>
-    <!-- box -->
-    <section class="d-lg-flex justify-content-center gap-5 mb-4">
-        <div class="d-flex flex-column justify-content-center align-items-center">
-            <article class="card mb-4" id="card_traveller">
-                <img class="card-img-top" src="https://i.postimg.cc/fb4p0hWW/australia.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Austrália</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <button class="btn_box">Leia mais</button>
-                </div>
-            </article>
-        </div>
-
-        <!-- box -->
-        <div class="d-flex flex-column justify-content-center align-items-center">
-            <article class="card mb-4" id="card_traveller">
-                <img class="card-img-top"
-                    src="https://www.epikusviagens.com.br/public/uploads/1599023173-content-19.jpg"
-                    alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Africa</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <button class="btn_box">Leia mais</button>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <!-- área do mapa -->
-    <h2 class="text-center p-4">Navegue pelo seu destino</h2>
-    <section class="map-container">
-        <div id="coordenadas" class="coordenadas"></div>
-        <div id="mapa" class="mapa"></div>
-        <button class="btn_banner mb-4" data-toggle="modal" data-target="#exampleModal">Faça sua reserva</button>
-    </section>
+    <!-- -->
 
     <!-- footer -->
     <footer class=" text-white p-5" id="footer_container">
-        <h4 class="text-center">Siga as minhas redes</h4>
+        <h4 class="text-center">Siga as nossas redes!</h4>
         <!-- social icons -->
         <div class="my_social_icons">
             <ul class="list-unstyled d-flex justify-content-center gap-3 mt-2">
@@ -804,9 +781,6 @@
             </ul>
             <!-- copyright -->
             <div class="text-center">
-                <span>
-                    <a href="https://getulio-souza.github.io/portfolio_react/" target="_blank">Getúlio Souza</a>
-                </span>
                 <p>2022. Todos os direitos reservados.</p>
             </div>
         </div>

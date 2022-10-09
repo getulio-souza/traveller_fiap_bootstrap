@@ -165,3 +165,17 @@ height: 100vh;
 .account-into-btn:hover{
     opacity: 0.7;
 }
+
+.date-input{
+    font-size: 14px;
+}
+
+.input-photo{
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: -10px;
+}
+
+.input-password::placeholder{
+    font-size: 9px;
+}

@@ -26,17 +26,18 @@ Estilos Globais
 
 /* modal */
 
-.modal-background{
+.modal-profile-background{
 background-color: #7BC074;
 width: 100%;
 height: 100vh;
 }
 
-.modal-container{
+.modal-profile-container{
  background-color: rgb(224, 218, 218);
  box-shadow: 1px 2px 3px rgb(103, 101, 101);
- width: 300px;
- height: 400px;
+ width:700px;
+ height: 470px;
+ padding: 30px 0;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -48,7 +49,7 @@ height: 100vh;
  font-family: inter;
 }
 
-.modal-close-btn{
+.modal-profile-close-btn{
   position: absolute;
   top: 20px;
   right: 20px;
@@ -56,7 +57,7 @@ height: 100vh;
   cursor: pointer;
 }
 
-.modal-close-btn:hover{
+.modal-profile-close-btn:hover{
   color: #6A9F65;
 }
 
@@ -88,11 +89,12 @@ height: 100vh;
   opacity: 0.7;
 }
 
-.modal-action-btn{
+.modal-profile-action-btn{
   width: 60%;
   text-align: center;
   padding: 5px 10px;
   background-color: #7BC074;
+  color: #fff;
   border-radius: 10px;
   cursor: pointer;
   font-weight: 600;
@@ -100,8 +102,66 @@ height: 100vh;
   transition: .5s;
 }
 
-.modal-action-btn:hover{
+.modal-profile-action-btn:hover{
   background-color: #6A9F65;
   color: #fff;
 }
 
+.profile-label{
+    font-size: 12px;
+}
+
+.header-container p{
+    font-size: 12px !important;
+    margin: 2px 0;
+}
+
+.input-info option{
+    font-size: 12px !important;
+}
+
+/* .account-info{
+    border: 1px solid #000;
+    padding: 10px;
+} */
+
+.account-info>p{
+    font-size: 12px;
+}
+
+.account-info-update-info{
+    font-size: 12px;
+}
+
+.account-text{
+    font-size: 12px;
+}
+
+.new-user-btn{
+    font-size: 12px;
+    border: none;
+    background-color: #7BC074;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+.new-user-btn:hover{
+    opacity: 0.7;
+}
+
+
+.account-into-btn{
+    font-size: 12px;
+    border: none;
+    background-color: #d82828;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+.account-into-btn:hover{
+    opacity: 0.7;
+}

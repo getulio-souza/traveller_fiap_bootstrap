@@ -29,6 +29,10 @@ Navbar
 ======================
 */
 
+.nav-item>a{
+  font-size: 10px !important;
+}
+
 .navbar_mobile{
  background-color: var(--verdeescuro);
 }
@@ -65,20 +69,20 @@ Navbar
  margin: 10px 20px;
 }
 
-.sign-in-link{
+.login-btn{
   background-color: #7BC074;
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
   cursor: pointer;
   border-radius: 20px;
-  padding: 10px 15px;
+  padding: 10px 30px !important;
 }
 
-.sign-in-link:hover{
+.login-btn:hover{
   background-color: transparent;
   border: 1px solid #000;
+  color: #000 !important;
 }
-
 
 /*
 ============================

@@ -29,6 +29,7 @@ Navbar
 ======================
 */
 
+
 .navbar_mobile{
  background-color: var(--verdeescuro);
 }
@@ -118,12 +119,15 @@ Banner
 ============================
 */
 
-
 #img_banner{
-  max-width: 50%;
-  box-shadow: 1px 2px 5px --corpreta;
-  border-radius: 10px;
+  flex: 25%;
+  max-width: 25%;
+  vertical-align: middle;
   object-fit: contain;
+  transition: .5s;
+}
+#img_banner:hover{
+  opacity: 0.4;
 }
 
 @media screen and (max-width:678px){
@@ -177,7 +181,62 @@ Banner
 }
 
 #card_traveller:hover{
-    transform: translateY(15px);
+  transform: translateY(15px);
+}
+
+/* gallery */
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding:0;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0;
+}
+
+.column>a>h5{
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 99999;
+}
+
+.column>img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  height: 200px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.column>img:hover{
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 /*

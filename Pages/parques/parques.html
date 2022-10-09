@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Styles CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Pages/parques/parques.css">
+
+    <!-- font aweasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Traveller - Um blog alternativo de viagens</title>
+
+    <!-- map quest api -->
+    <script src="./script.js"></script>
+    <!-- api google -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA23VpIr3wOxEqZ3xUuX69fSWwn6Gjw_fs&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_locatorplus_v6_cAF"
+        async defer></script>
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
+
+</head>
+
+<body>
+    <!-- barra de navegação -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <section class="container-fluid">
+            <!-- logo -->
+            <a class="navbar-brand"><img src="/img/traveller_logo.png" alt="traveller_logo" class="traveller_logo"></a>
+            <!-- button-->
+            <button class="navbar-toggler position-relative" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" id="my_toggle_btn"></span>
+            </button>
+
+            <!-- icons -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 float-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html" id="my_nav_item">Home</a>
+                        <div class="my_nav_underline"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Pages/dicas-uteis/dicas.html"
+                            id="my_nav_item">Dicas
+                            úteis</a>
+                        <div class="my_nav_underline"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Pages/hospedagem/hospedagem.html"
+                            id="my_nav_item">Onde se
+                            hospedar</a>
+                        <div class="my_nav_underline"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Pages/carro/alugar-carro.html"
+                            id="my_nav_item"> Alugue
+                            seu carro</a>
+                        <div class="my_nav_underline"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Pages/gastrononia/gastronomia.html"
+                            id="my_nav_item">
+                            Gastrononia</a>
+                        <div class="my_nav_underline"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Pages/entretenimento/entretenimento.html"
+                            id="my_nav_item"> Vida
+                            Noturna/Entretenimento</a>
+                        <div class="my_nav_underline"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Pages/parques/parques.html"
+                            id="my_nav_item">
+                            Parques</a>
+                        <div class="my_nav_underline"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="sign-in-link nav-link active " aria-current="page" id="my_nav_item">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </nav>
+    <!-- fim do menu-->
+    </nav>
+    <!-- fim da barra de navegação -->
+
+    <!-- banner principal -->
+    <section class="container d-lg-flex justify-content-center align-items-center gap-5 mb-5 mt-5">
+        <!-- bloco 1-->
+        <article class="container text-lg-center text-center mb-3 p-2 shadow p-5 mb-5 bg-white rounded"
+            id="box_1_banner">
+            <div class="m-auto">
+                <h1>Aproveite o ar livre!</h1>
+                <p class="w-sm-50">Curta a beleza da natureza, fazendo um piquenique ou praticando seu esporte favorito em um dia ensolarado.
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <!--list of boxes (Destinos visitados) -->
+    <h2 class="text-center mx-0 my-4">Parques (SP)</h2>
+    <h6 class="text-center mx-auto w-50 mb-4 subtitle">Em meio a tantos prédios, a cidade de São Paulo ainda conta com espaço de lazer e descanso ao ar livre que oferecem uma fuga para tranquilizar a mente e o corpo nos finais de semana.</h6>
+    <!-- box -->
+    <section class="d-lg-flex justify-content-center gap-5 mb-4">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <article class="card mb-4" id="card_traveller">
+                <img class="card-img-top" src="/img/parques/sp/ibirapuera.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Parque do Ibirapuera</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <button class="btn_box">Como chegar</button>
+                    <button class="btn_cta">Saiba mais</button>
+                </div>
+            </article>
+        </div>
+
+        <!-- box -->
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <article class="card mb-4" id="card_traveller">
+                <img class="card-img-top" src="/img/parques/sp/villa-lobos.JPG" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Villa Lobos</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <button class="btn_box">Como chegar</button>
+                    <button class="btn_cta">Saiba mais</button>
+                </div>
+            </article>
+        </div>
+
+        <!-- box -->
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <article class="card mb-4" id="card_traveller">
+                <img class="card-img-top" src="/img/parques/sp/carmo.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Parque do Carmo</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <button class="btn_box">Como chegar</button>
+                    <button class="btn_cta">Saiba mais</button>
+            </article>
+        </div>
+    </section>
+    <!--list of boxes (Destinos visitados) -->
+    <h2 class="text-center mx-0 my-4">Parques (RJ)</h2>
+    <h6 class="text-center mx-auto w-50 mb-4 subtitle">Não é apenas de praias que vive a cidade maravilhosa. Ela também chama a atenção pelas áreas verdes que estão espalhadas pela cidade que proporcionam momentos de relaxamento e diversão com a família ou amigos.</h6>
+    <!-- box -->
+    <section class="d-lg-flex justify-content-center gap-5 mb-4">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <article class="card mb-4" id="card_traveller">
+                <img class="card-img-top" src="/img/parques/rj/parque-naciona-da-tijuca.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Parque Nacional da Tijuca</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <button class="btn_box">Como chegar</button>
+                    <button class="btn_cta">Saiba mais</button>
+                </div>
+            </article>
+        </div>
+
+        <!-- box -->
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <article class="card mb-4" id="card_traveller">
+                <img class="card-img-top" src="/img/parques/rj/parque-estadual-da-chacrinha.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Parque Estadual da Chacrinha</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <button class="btn_box">Como chegar</button>
+                    <button class="btn_cta">Saiba mais</button>
+                </div>
+            </article>
+        </div>
+
+        <!-- box -->
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <article class="card mb-4" id="card_traveller">
+                <img class="card-img-top" src="/img/parques/rj/quinta-da-boa-vista.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Parque Quinta da Boa Vista</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <button class="btn_box">Como chegar</button>
+                    <button class="btn_cta">Saiba mais</button>
+            </article>
+        </div>
+    </section>
+    <!--list of boxes (Destinos visitados) -->
+    <h2 class="text-center mx-0 my-4">Parques (MG)</h2>
+    <h6 class="text-center mx-auto w-50 mb-4 subtitle">Minas gerais impressiona pela sua culinária e também pelas suas belezas naturais, como por exemplo, seus parques que são um espetáculo a parte, tanto para os residentes quanto visitantes que podem aproveitar para conhecer um pouco da fauna e flora da vegeração nativa.</h6>
+    <!-- box -->
+    <section class="d-lg-flex justify-content-center gap-5 mb-4">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <article class="card mb-4" id="card_traveller">
+                <img class="card-img-top" src="/img/parques/mg/Parque Nacional do Caparaó.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Parque Nacional do Caparaó</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <button class="btn_box">Como chegar</button>
+                    <button class="btn_cta">Saiba mais</button>
+                </div>
+            </article>
+        </div>
+
+        <!-- box -->
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <article class="card mb-4" id="card_traveller">
+                <img class="card-img-top" src="/img/parques/mg/Parque Nacional Grande Sertão Veredas.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Parque Nacional Grande Sertão Veredas</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <button class="btn_box">Como chegar</button>
+                    <button class="btn_cta">Saiba mais</button>
+
+                </div>
+            </article>
+        </div>
+
+        <!-- box -->
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <article class="card mb-4" id="card_traveller">
+                <img class="card-img-top" src="/img/parques/mg/parque-nacional-da-serra-do-cipó.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Parque nacional da serra do cipó</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <button class="btn_box">Como chegar</button>
+                    <button class="btn_cta">Saiba mais</button>
+            </article>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class=" text-white p-5" id="footer_container">
+        <h4 class="text-center">Siga as nossas redes!</h4>
+        <!-- social icons -->
+        <div class="my_social_icons">
+            <ul class="list-unstyled d-flex justify-content-center gap-3 mt-2">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+            </ul>
+            <!-- copyright -->
+            <div class="text-center">
+                <p>2022. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

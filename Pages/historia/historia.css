@@ -1,0 +1,351 @@
+/*
+======================
+Estilos Globais
+======================
+*/
+
+:root{
+    --verdeescuro: #6A9F65;
+    --verdeclaro: #7BC074;
+    --textobtn: #fff;
+    --corpreta:#000;
+    --corvermelha: #ff0000;
+}
+
+
+.traveller_logo{
+  width: 80px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+#titles{
+  font-weight: 600;
+}
+
+/*
+======================
+Navbar
+======================
+*/
+
+.nav-item>a{
+  font-size: 10px !important;
+}
+
+.navbar_mobile{
+ background-color: var(--verdeescuro);
+}
+
+#my_nav_item{
+  font-weight:700;
+  margin: 0 10px;
+  color: #000;
+  transition: .3s;
+}
+
+#my_nav_item:hover{
+  color: var(--verdeescuro);
+}
+
+.my_nav_underline{
+  background-color: #000;
+  margin: 0 auto;
+  width: 70px;
+  height:1px;
+  text-align: center;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.my_nav_underline:hover{
+  transform: scaleX(10%);
+}
+
+.my_menu_traveller{
+ position: absolute;
+ top: 0;
+ right: 0;
+ margin: 10px 20px;
+}
+
+.login-btn{
+  background-color: #7BC074;
+  color: #fff !important;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 10px 30px !important;
+}
+
+.login-btn:hover{
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000 !important;
+}
+
+/*
+============================
+Toogle btn
+============================
+*/
+
+#my_navbar_toggler{
+  border-style: none;
+  color: #7BC074
+}
+
+#my_navbar_toggler:hover{
+  color: #6A9F65;
+}
+
+
+.btn-menu{
+    text-decoration: underline;
+    color: #000;
+    margin-right: 10px;
+    padding: 0 10px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    transform: .5s;
+}
+
+.btn-menu:hover{
+  color: var(--verdeescuro);
+  box-shadow: 1px 2px 5px --corpreta;
+}
+
+/*
+============================
+Banner
+============================
+*/
+
+
+#img_banner{
+  max-width: 50%;
+  box-shadow: 1px 2px 5px --corpreta;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+@media screen and (max-width:678px){
+  #img_banner{
+    max-width: 100%;
+  }
+}
+
+.btn_banner{
+  background-color: var(--verdeescuro);
+  color: #fff;
+  padding: 10px 15px;
+  font-weight: 500;
+  transition: .5s;
+  border-radius: 10px;
+}
+.btn_banner:hover{
+    background-color: var(--verdeclaro);
+  color: #fff;
+}
+
+.btn_banner_close{
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+  padding: 10px 15px;
+  font-weight: 500;
+  transition: .5s;
+  border-radius: 10px;
+}
+
+.btn_banner_close:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.btn_box{
+  background-color: #6A9F65;
+  color: var(--textobtn);
+  border-radius: 10px;
+  padding: 5px 15px;
+  transition: .5s;
+}
+
+.btn_box:hover{
+  opacity: 0.7;
+}
+
+.btn_cta{
+  background-color: rgb(115, 115, 204);
+  border: 1px solid #7BC074;
+  color: #fff;
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+
+.btn_cta:hover{
+  opacity: 0.7;
+}
+
+#box_1_banner{
+  box-shadow: 1px 2px 5px --corpreta;
+}
+
+#card_traveller{
+    width: 18rem;
+    transition: .3s ease-in-out;
+}
+
+#card_traveller:hover{
+    transform: translateY(15px);
+}
+
+/*
+============================
+About
+============================
+*/
+
+#about_img, #invite_img{
+  box-shadow: 1px 2px 5px var(--corpreta);
+  max-width: 100%;
+}
+
+#about_paragraphy{
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 10px;
+}
+
+.gallery-item{
+  max-width: 100%;
+}
+
+/*
+========================
+Modal 
+========================
+*/
+.modal_header{
+  background-color: #6A9F65;
+  color: #fff;
+}
+
+
+.btn_modal_close{
+  border-style: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 30px;
+  transform: .5s;
+}
+.btn_modal_close:hover{
+  color: var(--verdeescuro);
+}
+
+#select_container{
+  margin-left: 20px;
+}
+
+#select_container_start{
+  margin-left: 30px;
+}
+
+#select_container_arrive{
+ margin-left: 20px;
+}
+
+#select_container_state{
+  margin-left: 35px;
+}
+
+#select_container_airport{
+  margin-left: 10px;
+}
+
+/*
+===========================
+Mapa
+===========================
+*/
+
+.map-container{
+ background-image: url(./img/sao_paulo.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+ @media screen and (max-width:900px){
+   .map-container{
+     margin: 0 auto;
+    }
+}
+
+.map-container h2{
+   color: var(--corpreta);
+}
+
+.coordenadas{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.mapa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  object-fit: cover;
+  margin: 20px 0;
+}
+@media screen and (max-width:900px){
+  .mapa > img{
+    width: 300px;
+  }
+}
+
+/*
+============================
+Footer
+============================
+*/
+
+#footer_container{
+  background-color: #6A9F65;
+}
+
+.my_social_icons ul li:hover{
+  opacity: 0.6;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  transform: translateY(5px);
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-center > a{
+  color: #fff;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+@media screen and (max-width:900px){
+  .about-img{
+    width:350px;
+  }
+}
+@media screen and (min-width:901px){
+  .about-img{
+    width: 500px;
+  }
+}

@@ -39,4 +39,4 @@ verificarGeo();
 
 $(document).ready(function() {
     $(".dropdown-toggle").dropdown();
-});
+}); 

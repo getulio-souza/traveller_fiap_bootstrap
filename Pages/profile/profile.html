@@ -15,6 +15,9 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/Pages/profile/profile.css">
 
+    <!-- css mapquest-->
+       <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
+
     <!-- font aweasome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -26,22 +29,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <title>Traveller - Um blog alternativo de viagens</title>
 
-    <!-- map quest api -->
-    <script src="./script.js"></script>
-    <!-- api google -->
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA23VpIr3wOxEqZ3xUuX69fSWwn6Gjw_fs&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_locatorplus_v6_cAF"
-        async defer></script>
-    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
-
 </head>
 
 <body>
     <!-- modal changes sucess-->
     <!-- Modal -->
     <!-- Button trigger modal -->
-    
+
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -64,8 +58,8 @@
         <article class="modal-profile-container d-flex flex-column">
             <!-- header -->
             <h5 class="text-center modal-title-text">Edite seus dados</h5>
-                <div class="d-flex justify-content-center align-items-center gap-2 my-2">
-                    <!-- email & user -->
+            <div class="d-flex justify-content-center align-items-center gap-2 my-2">
+                <!-- email & user -->
                 <div class="d-flex flex-column text-center header-container">
                     <p>gulliver@traveller.com.br</p>
                     <p>Nível de usuário: convidado</p>
@@ -81,20 +75,21 @@
                 <button class="account-into-btn">alterar meus dados</button>
             </div>
             <!-- form -->
-             <article class="d-flex justify-content-space-between gap-5">
+            <article class="d-flex justify-content-space-between gap-5">
                 <!-- coluna da esquerda-->
                 <div>
                     <div class="d-flex flex-column mb-2">
                         <label for="text" class="profile-label">Nome</label>
-                        <input type="text" class="input-info my-1" placeholder="informe o seu nome">
+                        <input type="text" class="input-info my-1" id="nome" name="nome">
                     </div>
                     <div class="d-flex flex-column mb-2">
                         <label for="text" class="profile-label">E-mail</label>
-                        <input type="text" class="input-info my-1" placeholder="Digite o seu e-mail">
+                        <input type="text" class="input-info my-1" id="email" name="email">
                     </div>
                     <div class="d-flex flex-column mb-2">
                         <label for="text" class="profile-label">Data de nascimento</label>
-                        <input type="date" name="birth" id="birth" class="input-info my-1 date-input">
+                        <input type="date" class="input-info my-1 date-input" id="data_nascimento"
+                            name="data_nascimento">
                     </div>
                     <div class="d-flex flex-column mb-2">
                         <label for="text" class="profile-label">Foto</label>
@@ -102,29 +97,24 @@
                     </div>
                 </div>
                 <!-- coluna da direita-->
-                 <div>
-                     <div class="d-flex flex-column mb-2">
-                         <label for="text" class="profile-label">Senha</label>
-                         <input type="password" name="" id="" class="input-info input-password">
-                     </div>
-                     <div class="d-flex flex-column mb-2">
-                         <label for="text" class="profile-label">Nível de acesso</label>
-                          <input type="text" class="input-info my-1" placeholder="e-mail">
-                     </div>
-                     <div class="d-flex flex-column mb-2">
-                         <label for="text" class="profile-label">Cidade</label>
-                         <input type="text" class="input-info my-1" placeholder="e-mail">
-                     </div>
-                     <div class="d-flex flex-column mb-2">
-                         <label for="text" class="profile-label">Genero</label>
-                         <input type="text" class="input-info my-1" placeholder="selecione">
-                     </div>
-                 </div>
-             </article>
-             <button type="button" class=" modal-profile-action-btn mt-2" data-bs-toggle="modal"
-                 data-bs-target="#exampleModal">
-                 Gravar alterações
-             </button>
+                <div>
+                    <div class="d-flex flex-column mb-2">
+                        <label for="text" class="profile-label">Senha</label>
+                        <input type="password" name="" id="password" class="input-info input-password">
+                    </div>
+                    <div class="d-flex flex-column mb-2">
+                        <label for="text" class="profile-label">Nível de acesso</label>
+                        <input type="text" class="input-info my-1" placeholder="e-mail">
+                    </div>
+                    <div class="d-flex flex-column mb-2">
+                        <label for="text" class="profile-label">Cidade</label>
+                        <input type="text" class="input-info my-1" placeholder="e-mail" id="cidade" name="c idade" />
+                    </div>
+                </div>
+            </article>
+            <button type="submit" class=" modal-profile-action-btn mt-2" id="subscribe">
+                Gravar alterações
+            </button>
             <div class="modal-profile-close-btn">
                 <a href="/index.html">
                     <button class="new-user-btn">Logout</button>
@@ -133,7 +123,17 @@
         </article>
     </section>
 
-
+    <!-- firebase -->
+    <script type="module" src="./profile.js"></script>
+    <script type="module" src="./js/firebase/app.js"></script>
+    <!-- map quest api -->
+    <script src="./script.js"></script>
+    <!-- api google -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA23VpIr3wOxEqZ3xUuX69fSWwn6Gjw_fs&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_locatorplus_v6_cAF"
+        async defer></script>
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+ 
     <!-- javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
@@ -147,7 +147,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-
 </body>
 
 </html>

@@ -14,7 +14,8 @@ subscribeBtn.addEventListener('click', () => {
         cidade: txtCidade.value,
         nascimento: nascimento.value
     }
-    console.log(subscription);
+    //save on database
+    
 })
 
 debugger

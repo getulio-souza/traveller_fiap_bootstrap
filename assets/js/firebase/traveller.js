@@ -1,3 +1,5 @@
-export const subscribeToTraveller = ()=> {
-    console.log("subscription", subscription)
+import app from "./firebase/firebase-app.js";
+
+export function subscribeToTraveller(subscription) {
+    console.log("Subscription: ", subscription)
 }

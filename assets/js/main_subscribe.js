@@ -1,5 +1,5 @@
-import app from "./firebase/firebase-app.js";
-console.log(app)
+// import app from "./firebase/firebase-app.js";
+import { subscribeToTraveller } from "./firebase/traveller.js";
 
 const txtNome = document.getElementById("nome");
 const txtEmail= document.getElementById("email");
@@ -17,7 +17,10 @@ subscribeBtn.addEventListener('click', () => {
         nascimento: nascimento.value
     }
     //save on database
-    subscribeToTraveller();
+    subscribeToTraveller(subscription);
+    console.log(subscribeToTraveller);
 })
 
-debugger
+// debugger
+
+//01:43:27 onde parei

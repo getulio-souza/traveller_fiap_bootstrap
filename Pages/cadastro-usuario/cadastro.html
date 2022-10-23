@@ -53,25 +53,22 @@
 
     <!-- login box -->
     <section class="modal-profile-background ">
-        <article class="modal-profile-container d-flex flex-column">
+        <article class="modal-profile-container d-flex flex-column align-items-center">
             <!-- header -->
             <h5 class="text-center modal-title-text">Edite seus dados</h5>
             <div class="d-flex justify-content-center align-items-center gap-2 my-2">
-                <!-- email & user -->
                 <div class="d-flex flex-column text-center header-container">
                     <p>gulliver@traveller.com.br</p>
-                    <p>Nível de usuário: convidado</p>
+                    <p><span class="color-bold">Nível de usuário:</span> convidado</p>
                 </div>
-                <!-- btn create user -->
-                <div>
+                <!-- <div>
                     <button class="new-user-btn mb-2">cadastar novo usuário</button>
-                </div>
+                </div> -->
             </div>
-            <!-- dados - info -->
-            <div class="d-flex justify-content-between align-items-center gap-5 mb-4 account-info">
+            <!-- <div class="d-flex justify-content-between align-items-center gap-5 mb-4 account-info">
                 <div class="account-text">Dados da conta</div>
                 <button class="account-into-btn">alterar meus dados</button>
-            </div>
+            </div> -->
             <!-- form -->
             <form class="d-flex justify-content-space-between gap-5">
                 <!-- coluna da esquerda-->
@@ -91,7 +88,7 @@
                     </div>
                     <div class="d-flex flex-column mb-2">
                         <label for="text" class="profile-label">Foto</label>
-                        <input type="file" name="" id="" class="input-info input-photo">
+                        <input type="file" name="" id="" class="input-info input-photo" disabled>
                     </div>
                 </div>
                 <!-- coluna da direita-->
@@ -102,11 +99,14 @@
                     </div>
                     <div class="d-flex flex-column mb-2">
                         <label for="text" class="profile-label">Nível de acesso</label>
-                        <input type="text" class="input-info my-1" placeholder="e-mail">
+                        <select name="" id="" disabled>
+                            <option value="">visitante</option>
+                            <option value="">administrador</option>
+                        </select>
                     </div>
                     <div class="d-flex flex-column mb-2">
                         <label for="text" class="profile-label">Cidade</label>
-                        <input type="text" class="input-info my-1" placeholder="e-mail" id="cidade" name="c idade" />
+                        <input type="text" class="input-info my-1" placeholder="cidade" id="cidade" name="c idade" />
                     </div>
                 </div>
             </form>

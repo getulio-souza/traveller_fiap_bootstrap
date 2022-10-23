@@ -1,4 +1,5 @@
-import app from "./firebase/firebase-app";
+import app from "./firebase/firebase-app.js";
+console.log(app)
 
 const txtNome = document.getElementById("nome");
 const txtEmail= document.getElementById("email");
@@ -16,7 +17,7 @@ subscribeBtn.addEventListener('click', () => {
         nascimento: nascimento.value
     }
     //save on database
-    
+    subscribeToTraveller();
 })
 
 debugger

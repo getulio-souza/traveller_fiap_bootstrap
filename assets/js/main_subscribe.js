@@ -1,5 +1,6 @@
+import app from "./firebase/firebase-app";
+
 const txtNome = document.getElementById("nome");
-console.log(nome);
 const txtEmail= document.getElementById("email");
 const txtSenha = document.getElementById("password");
 const txtCidade = document.getElementById("cidade");

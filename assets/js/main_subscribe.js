@@ -1,4 +1,3 @@
-// import app from "./firebase/firebase-app.js";
 import { subscribeToTraveller } from "./firebase/traveller.js";
 
 const txtNome = document.getElementById("nome");
@@ -8,7 +7,7 @@ const txtCidade = document.getElementById("cidade");
 const nascimento = document.getElementById("data_nascimento");
 const subscribeBtn = document.getElementById("subscribe");
 
-subscribeBtn.addEventListener('click', () => {
+subscribeBtn.addEventListener('click', async () => {
     const subscription = {
         nome: txtNome.value,
         email: txtEmail.value,
@@ -17,8 +16,9 @@ subscribeBtn.addEventListener('click', () => {
         nascimento: nascimento.value
     }
     //save on database
-    subscribeToTraveller(subscription);
-    console.log(subscribeToTraveller);
+    const subscriptionId = await subscribeToTraveller(subscription);
+    alert("usuário inscrito com sucesso!")
+    // console.log(`Inscrito com sucesso: ${subscriptionId}`)
 })
 
 // debugger

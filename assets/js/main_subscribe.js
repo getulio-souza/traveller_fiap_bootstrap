@@ -18,9 +18,4 @@ subscribeBtn.addEventListener('click', async () => {
     //save on database
     const subscriptionId = await subscribeToTraveller(subscription);
     alert("usuário inscrito com sucesso!")
-    // console.log(`Inscrito com sucesso: ${subscriptionId}`)
 })
-
-// debugger
-
-//01:43:27 onde parei

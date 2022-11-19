@@ -63,22 +63,29 @@
                 </a>
             </div>
             <div class="d-flex flex-column mb-1">
-                <input type="text" class="input-info my-1" placeholder="getuliosouza@live.com">
+                <input type="email" name="email" id="email" onchange="validateFields()" class="input-info my-1"
+                    placeholder="meuemail@email.com">
+                <div class="modal-alert-message">E-mail obrigatório</div>
+                <div class="modal-alert-message">E-mail inválido</div>
             </div>
             <div class="d-flex flex-column">
-                <input type="password" name="" id="" class="input-info" placeholder="123456">
+                <input type="password" name="password" id="password" onchange="validateFields()" class="input-info"
+                    placeholder="senha">
+                <div class="modal-alert-message">Senha obrigatória</div>
             </div>
+            </div>
+            <!-- recover password -->
+            <div class="mt-2 mb-2 text-center">
+                <button class="forget-password-text" id="recover-passowrd-button">Recuperar senha</button>
             </div>
             <!-- forget password / subscribe-->
-            <div class="mt-2 text-center">
+            <div class="text-center">
                 <p class="mb-1 forget-password-text">Não tem cadastro?</p>
                 <a href="../cadastro-usuario/cadastro.html" class="text-decoration-none">
                     <p class="forget-password-text text-danger">Clique aqui!</p>
                 </a>
             </div>
-            <a href="/Pages/profile/profile.html" class="modal-action-btn">
-                <buttton>login</buttton>
-            </a>
+            <buttton class="modal-action-btn" type="button" id="login-button" disabled="true">login</buttton>
             </article>
     </section>
 
@@ -96,7 +103,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-
+    <script src="/assets/js/validation-login/validation-login.js"></script>
 </body>
 
 </html>

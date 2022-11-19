@@ -83,10 +83,11 @@
             <div class="text-center">
                 <p class="mb-1 forget-password-text">Não tem cadastro?</p>
                 <a href="../cadastro-usuario/cadastro.html" class="text-decoration-none">
-                    <p class="forget-password-text text-danger">Clique aqui!</p>
+                    <p class="forget-password-text text-danger" onclick="register()">Clique aqui!</p>
                 </a>
             </div>
-            <buttton class="modal-action-btn" type="button" id="login-button" disabled="true">login</buttton>
+            <buttton class="modal-action-btn" type="button" id="login-button" disabled="true" onclick="login()">login
+            </buttton>
             </article>
     </section>
 
@@ -106,6 +107,7 @@
     </script>
     <script src="validation-login.js"></script>
     <script src="/assets/js/validations.js"></script>
+    <script src="navigation.js"></script>
 </body>
 
 </html>

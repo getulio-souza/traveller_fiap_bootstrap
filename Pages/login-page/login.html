@@ -63,20 +63,21 @@
                 </a>
             </div>
             <div class="d-flex flex-column mb-1">
-                <input type="email" name="email" id="email" onchange="validateFields()" class="input-info my-1"
+                <input type="email" name="email" id="email" onchange="onChangeEmail()" class="input-info my-1"
                     placeholder="meuemail@email.com">
-                <div class="modal-alert-message">E-mail obrigatório</div>
-                <div class="modal-alert-message">E-mail inválido</div>
+                <div class="alert-message" id="email-required-error">E-mail obrigatório</div>
+                <div class="alert-message" id="email-invalid-error">E-mail inválido</div>
             </div>
             <div class="d-flex flex-column">
-                <input type="password" name="password" id="password" onchange="validateFields()" class="input-info"
+                <input type="password" name="password" id="password" onchange="onChangePassword()" class="input-info"
                     placeholder="senha">
-                <div class="modal-alert-message">Senha obrigatória</div>
+                <div class="alert-message" id="password-required-error">Senha obrigatória</div>
+                <!-- <div class="alert-message">Senha incorreta. Digite novamente</div> -->
             </div>
             </div>
             <!-- recover password -->
             <div class="mt-2 mb-2 text-center">
-                <button class="forget-password-text" id="recover-passowrd-button">Recuperar senha</button>
+                <button class="forget-password-text" id="recover-password-button">Recuperar senha</button>
             </div>
             <!-- forget password / subscribe-->
             <div class="text-center">
@@ -103,7 +104,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-    <script src="/assets/js/validation-login/validation-login.js"></script>
+    <script src="validation-login.js"></script>
+    <script src="/assets/js/validations.js"></script>
 </body>
 
 </html>

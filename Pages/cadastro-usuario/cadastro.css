@@ -50,10 +50,17 @@ height: 100vh;
 }
 @media screen and (max-width:900px){
   .modal-profile-container{
-    width: 70%;
+    max-width: 350px;
     height: fit-content;
   }
 }
+@media screen and (max-width:700px){
+  .modal-profile-container{
+    max-width: 300px;
+    height: fit-content;
+  }
+}
+
 
 @media screen and (max-width:900px){
   .subscribe-form-container{
@@ -69,6 +76,13 @@ height: 100vh;
   transition: .5s;
   cursor: pointer;
 }
+@media screen and (max-width:900px){
+  .modal-profile-close-btn{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+  }
+}
 
 .modal-profile-close-btn:hover{
   color: #6A9F65;
@@ -76,6 +90,11 @@ height: 100vh;
 
 .modal-title-text{
   font-weight: 600;
+}
+@media screen and (max-width:900px){
+  .modal-title-text{
+    margin-top: 20px;
+  }
 }
 
 .input-info{
@@ -181,6 +200,13 @@ height: 100vh;
 
 .date-input{
     font-size: 14px;
+}
+
+@media screen and (max-width:900px){
+  .input-photo-container{
+    margin-top: 10px;
+    margin-bottom: -27px;
+  }
 }
 
 .input-photo{

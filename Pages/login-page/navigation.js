@@ -1,6 +1,9 @@
 function login() {
-    // console.log(login);
-    window.location.href = "/index.html"
+        firebase.auth().signInWithEmailAndPassword(form.email().value, form.password().value).then(response => {
+            console.log('sucess', response)
+        }).catch(error => {
+            console.log('error', error)
+        });
 }
 
 function register() {

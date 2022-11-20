@@ -1,11 +1,14 @@
 function login() {
+    showLoading();
     firebase.auth().signInWithEmailAndPassword(
         form.email().value,
         form.password().value
     ).then(response => {
+        hideLoading();
             alert("login realizado com sucesso!")
             window.location.href = "/index.html"
-        }).catch(error => {
+    }).catch(error => {
+        hideLoading();
             alert(getErrorMessage(error));
         });
 }
@@ -19,5 +22,6 @@ function getErrorMessage(error) {
 }
 
 function register() {
+    // showLoading();
     window.location.href = "/Pages/cadastro-usuario/cadastro.html"
 }

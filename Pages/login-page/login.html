@@ -37,21 +37,7 @@
 
 </head>
 
-<body>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog text-center">
-            <div class="modal-content">
-                <div class="modal-header justify-content-center">
-                    <h5 class="modal-titl" id="exampleModalLabel">Usuário não encontrado</h5>
-                </div>
-                <div class="modal-footer justify-content-center">
-                    <button type="button" class="modal-profile-action-btn" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
-        </div>
-    </div>
+<body class="centralize">
 
     <!-- login box -->
     <section class="modal-background ">
@@ -80,14 +66,15 @@
                 <button class="forget-password-text" id="recover-password-button">Recuperar senha</button>
             </div>
             <!-- forget password / subscribe-->
-            <div class="text-center">
-                <p class="mb-1 forget-password-text">Não tem cadastro?</p>
-                <a href="../cadastro-usuario/cadastro.html" class="text-decoration-none">
-                    <p class="forget-password-text text-danger" onclick="register()">Clique aqui!</p>
-                </a>
+            <div class="modal-login-btn mb-2">
+                <buttton type="button" id="login-button" disabled="true" onclick="login()">Entrar
+                </buttton>
             </div>
-            <buttton class="modal-action-btn" type="button" id="login-button" disabled="true" onclick="login()">login
-            </buttton>
+            <div class="modal-subcribe-btn">
+                <buttton type="button" id="login-button" disabled="true" onclick="register()">
+                    Cadastre-se
+                </buttton>
+            </div>
             </article>
     </section>
 
@@ -108,6 +95,7 @@
     <script src="validation-login.js"></script>
     <script src="/assets/js/validations.js"></script>
     <script src="navigation.js"></script>
+    <script src="/assets/js/loading.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js"></script>
     <script>
@@ -121,7 +109,9 @@
         };
         firebase.initializeApp(firebaseConfig);
     </script>
-    <script src="/assets/js/loading.js"></script>
 </body>
-
+<!-- loading component -->
+<!-- <div class="loading centralize">
+    <label>Carregando...</label>
+</div> -->
 </html>

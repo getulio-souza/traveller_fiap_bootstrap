@@ -1,9 +1,21 @@
 function login() {
-        firebase.auth().signInWithEmailAndPassword(form.email().value, form.password().value).then(response => {
-            console.log('sucess', response)
+    firebase.auth().signInWithEmailAndPassword(
+        form.email().value,
+        form.password().value
+    ).then(response => {
+            alert("login realizado com sucesso!")
+            window.location.href = "/index.html"
         }).catch(error => {
-            console.log('error', error)
+            alert(getErrorMessage(error));
         });
+}
+
+//creating an error message if user was incorrect 
+function getErrorMessage(error) {
+    if (error.code == "auth/user-not-found") {
+        return "Usuário não encontrado";
+    }
+    return error.message;
 }
 
 function register() {

@@ -18,6 +18,9 @@ function getErrorMessage(error) {
     if (error.code == "auth/user-not-found") {
         return "Usuário não encontrado";
     }
+    if (error.code == "auth/wrong-password") {
+        return "Senha inválida"
+    }
     return error.message;
 }
 

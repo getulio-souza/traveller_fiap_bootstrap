@@ -63,7 +63,8 @@
             </div>
             <!-- recover password -->
             <div class="mt-2 mb-2 text-center">
-                <button class="forget-password-text" id="recover-password-button">Recuperar senha</button>
+                <button class="forget-password-text" id="recover-password-button" onclick="recoverPassword()">Recuperar
+                    senha</button>
             </div>
             <!-- forget password / subscribe-->
             <div class="modal-login-btn mb-2">
@@ -96,6 +97,7 @@
     <script src="/assets/js/validations.js"></script>
     <script src="navigation.js"></script>
     <script src="/assets/js/loading.js"></script>
+    <script src="recover-password.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.14.0/firebase-auth-compat.js"></script>
     <script>
@@ -114,4 +116,5 @@
 <!-- <div class="loading centralize">
     <label>Carregando...</label>
 </div> -->
+
 </html>

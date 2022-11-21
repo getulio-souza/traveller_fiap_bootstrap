@@ -40,8 +40,6 @@ function getErrorMessage(error){
     return error.message;
 }
 
-
-
 function validatePasswordsMatch() {
     const password = form.password().value;
     const confirmPassword = form.confirmPassword().value;

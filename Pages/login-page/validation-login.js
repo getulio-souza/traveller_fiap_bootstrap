@@ -30,7 +30,6 @@ function tooglePasswordErrors() {
 
 }
 
-
 //buttons disable
 function toogleButtonsDisable() {
     const emailValid = isEmailValid();

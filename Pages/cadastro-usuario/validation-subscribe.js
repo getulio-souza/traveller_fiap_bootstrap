@@ -19,7 +19,7 @@ function onChangeConfirmPassword() {
 }
 
 //create new user
-function register(){
+function registerUser(){
     showLoading();
     const email = form.email().value;
     const password = form.password().value;

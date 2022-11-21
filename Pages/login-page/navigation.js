@@ -13,7 +13,7 @@ function login() {
 //creating an error message if user was incorrect 
 function getErrorMessage(error) {
     if (error.code == "auth/user-not-found") {
-        return "Usuário não encontrado";
+        return "Usuário não encontrado. Cheque os campos e tente novamente.";
     }
     if (error.code == "auth/wrong-password") {
         return "Senha inválida"
